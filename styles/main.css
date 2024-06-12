@@ -201,6 +201,9 @@ footer{
     text-align: center;
 }
 footer p{
+    font-family: 'Roboto mono', monospace;
+    font-size: larger;
+    font-weight: bold;
     color: var(--color-white);
     margin-top: 30px;
 }
