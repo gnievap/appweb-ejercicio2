@@ -280,6 +280,16 @@ footer p{
     font-family: 'Roboto mono', monospace;
 }
 
+form{
+    padding: 10px;
+    font-family: 'Roboto mono', monospace;
+    background-color: var(--color-contact2);
+}
+
+label {
+    font-weight: bold;
+}
+
 
 
 
