@@ -6,6 +6,7 @@
     --color-light: #b3daff;
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-contact2: #bcbfc2;  
     --font-medium: 1.4rem;
     --font-large: 1.6rem;
 }
@@ -207,5 +208,78 @@ footer p{
     color: var(--color-white);
     margin-top: 30px;
 }
+
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--color-contact2);
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'Roboto mono', monospace;
+}
+
+.contact-main-container div {
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+    background-color: var(--color-contact2);
+    font-family: 'Roboto mono', monospace;
+}
+
+.contact-main-container div a {
+    border-bottom: 1px solid var(--color-black);
+    padding-bottom: 5px;
+    font-family: 'Roboto mono', monospace;
+}
+
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+    font-family: 'Roboto mono', monospace;
+}
+
+.contact-main-container img {
+    width: 100px;
+
+}
+
+.profile-main-container {
+    padding: 70px 40px;
+    background-color: var(--color-contact);
+    margin-bottom: 50px;
+    font-family: 'Roboto mono', monospace;
+}
+
+.profile-main-container img {
+    width: 320px;
+    margin-right: 30px;
+}
+
+.profile-main-container .profile-container {
+    display: flex;
+}
+
+.profile-main-projects {
+    padding: 0 50px 40px;
+}
+
+.profile-main-projects h3 {
+    border-bottom: 1px solid var(--color-gray);
+    padding-bottom: 35px;
+    text-align: center;
+    font-family: 'Roboto mono', monospace;
+}
+
+.projects-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-container {
+    padding: 0 5px;
+    font-family: 'Roboto mono', monospace;
+}
+
+
 
 
