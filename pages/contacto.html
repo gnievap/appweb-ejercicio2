@@ -33,13 +33,31 @@
     <main>
         <h2>Formulario de contacto</h2>
         <hr>
-        <form action="/" method="post">
+        <form action="" method="" autocomplete="on">
             <label for="nombre">Escribe tu nombre: </label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre"
+            autocomplete="name" required>
             <br><br>
-            <label for="mail">Escribe tu correo electrónico:</label>
-            <input type="mail" id="mail" name="mail">
+            <label for="email">Escribe tu correo electrónico:</label>
+            <input type="mail" id="mail" name="mail" required>
             <br><br>
+            <!-- Creación de una lista desplegable -->
+             <label for="intereses">¿Qué te interesa del blog?</label>
+             <select name="intereses" id="intereses">
+                <option value="historia">Historia de la computación</option>
+                <option value="noticias">Últimas noticias</option>
+                <option value="gadgets">Reseñas de los mejores gadgets</option>
+             </select>
+             <br><br>
+             <!-- Otra forma de crear una lista -->
+              <label for="gadgets">Selecciona el gadget que te interese:</label>
+             <input list="gadgets">
+                <datalist id="gadgets">
+                    <option value="Smartwatch">Reloj inteligente</option>
+                    <option value="Weareables">Dispositivos vestibles</option>
+                    <option value="Gafas">Gafas de realidad aumentada</option>
+                </datalist>
+            <br> <br>
             <label for="mensaje">Escribe tu mensaje: </label>
             <textarea name="mensaje" id="mensaje"></textarea>
             <button class="blog-button"  type="submit">
